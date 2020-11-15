@@ -1,0 +1,11 @@
+domain: com
+layout: go.kubebuilder.io/v2
+projectName: nginx-operator
+repo: github.com/adshafqat/nginx-operator
+resources:
+- group: zaynsolutions
+  kind: ZaynNginx
+  version: v1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}

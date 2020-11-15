@@ -1,0 +1,8 @@
+apiVersion: zaynsolutions.com/v1
+kind: ZaynNginx
+metadata:
+  name: zaynnginx-sample
+spec:
+  replicas: 2
+  # Add fields here
+  foo: bar

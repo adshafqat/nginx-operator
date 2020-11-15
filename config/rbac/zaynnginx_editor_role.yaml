@@ -1,0 +1,24 @@
+# permissions for end users to edit zaynnginxes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: zaynnginx-editor-role
+rules:
+- apiGroups:
+  - zaynsolutions.com
+  resources:
+  - zaynnginxes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - zaynsolutions.com
+  resources:
+  - zaynnginxes/status
+  verbs:
+  - get
